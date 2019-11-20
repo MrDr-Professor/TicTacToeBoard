@@ -21,23 +21,23 @@ TEST(TicTacToeBoardTest, unitTestName)
 }
 */
 
-TEST(TicTacToeBoard, oneTurn)
+TEST(TicTacToeBoardTest, oneTurn)
 {
   TicTacToeBoard T;
-	ASSERT_EQ(T.toggleTurn == 'O');
+	ASSERT_EQ(T.toggleTurn, 'O');
 }
 
-TEST(TicTacToeBoard, twoTurn)
+TEST(TicTacToeBoardTest, twoTurn)
 {
   TicTacToeBoard T;
   T.toggleTurn;
-	ASSERT_EQ(T.toggleTurn == 'X');
+	ASSERT_EQ(T.toggleTurn, 'X');
 }
 
-TEST(TicTacToeBoard, threeTurn)
+TEST(TicTacToeBoardTest, threeTurn)
 {
   TicTacToeBoard T;
   T.toggleTurn;
   T.toggleTurn;
-	ASSERT_EQ(T.toggleTurn == 'O');
+	ASSERT_EQ(T.toggleTurn, 'O');
 }
