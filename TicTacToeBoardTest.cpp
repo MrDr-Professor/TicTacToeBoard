@@ -45,21 +45,21 @@ TEST(TicTacToeBoardTest, threeTurn)
 TEST(TicTacToeBoardTest, onePlace)
 {
   TicTacToeBoard T;
-	ASSERT_EQ(T.placePiece(0, 0);, 'X');
+	ASSERT_EQ(T.placePiece(0, 0), 'X');
 }
 
 TEST(TicTacToeBoardTest, twoPlace)
 {
   TicTacToeBoard T;
   T.placePiece(0, 0);
-	ASSERT_EQ(T.placePiece(0, 1);, 'O');
+	ASSERT_EQ(T.placePiece(0, 1), 'O');
 }
 
 TEST(TicTacToeBoardTest, samePlaceX)
 {
   TicTacToeBoard T;
   T.placePiece(0, 0);
-	ASSERT_EQ(T.placePiece(0, 0);, 'X');
+	ASSERT_EQ(T.placePiece(0, 0), 'X');
 }
 
 TEST(TicTacToeBoardTest, samePlaceO)
@@ -67,7 +67,7 @@ TEST(TicTacToeBoardTest, samePlaceO)
   TicTacToeBoard T;
   T.placePiece(0, 0);
   T.placePiece(0, 1);
-	ASSERT_EQ(T.placePiece(0, 1);, 'X');
+	ASSERT_EQ(T.placePiece(0, 1), 'X');
 }
 
 TEST(TicTacToeBoardTest, full)
@@ -82,5 +82,5 @@ TEST(TicTacToeBoardTest, full)
   T.placePiece(2, 0);
   T.placePiece(2, 2);
   T.placePiece(2, 1);
-	ASSERT_EQ(T.placePiece(0, 0);, 'O');
+	ASSERT_EQ(T.placePiece(0, 0), 'O');
 }
