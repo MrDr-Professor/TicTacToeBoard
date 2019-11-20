@@ -24,20 +24,20 @@ TEST(TicTacToeBoardTest, unitTestName)
 TEST(TicTacToeBoardTest, oneTurn)
 {
   TicTacToeBoard T;
-	ASSERT_EQ(T.toggleTurn, 'O');
+	ASSERT_EQ(T.toggleTurn(), 'O');
 }
 
 TEST(TicTacToeBoardTest, twoTurn)
 {
   TicTacToeBoard T;
-  T.toggleTurn;
-	ASSERT_EQ(T.toggleTurn, 'X');
+  T.toggleTurn();
+	ASSERT_EQ(T.toggleTurn(), 'X');
 }
 
 TEST(TicTacToeBoardTest, threeTurn)
 {
   TicTacToeBoard T;
-  T.toggleTurn;
-  T.toggleTurn;
-	ASSERT_EQ(T.toggleTurn, 'O');
+  T.toggleTurn();
+  T.toggleTurn();
+	ASSERT_EQ(T.toggleTurn(), 'O');
 }
