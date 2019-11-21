@@ -101,3 +101,74 @@ TEST(TicTacToeBoardTest, win)
   T.placePiece(0, 2);
 	ASSERT_EQ(T.placePiece(2, 0), 'O');
 }
+
+TEST(TicTacToeBoardTest, getX)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+	ASSERT_EQ(T.getPiece(0, 0), 'X');
+}
+
+TEST(TicTacToeBoardTest, getO)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(0, 1);
+	ASSERT_EQ(T.getPiece(0, 1), 'O');
+}
+
+TEST(TicTacToeBoardTest, getOut)
+{
+  TicTacToeBoard T;
+	ASSERT_EQ(T.getPiece(0, 3), '?');
+}
+
+TEST(TicTacToeBoardTest, getBlank)
+{
+  TicTacToeBoard T;
+	ASSERT_EQ(T.getPiece(0, 0), ' ');
+}
+
+TEST(TicTacToeBoardTest, getNoWinner)
+{
+  TicTacToeBoard T;
+	ASSERT_EQ(T.getWinner(), '?');
+}
+
+TEST(TicTacToeBoardTest, getFull)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(0, 2);
+  T.placePiece(0, 1);
+  T.placePiece(1, 0);
+  T.placePiece(1, 2);
+  T.placePiece(1, 1);
+  T.placePiece(2, 0);
+  T.placePiece(2, 2);
+  T.placePiece(2, 1);
+	ASSERT_EQ(T.getWinner(), ' ');
+}
+
+TEST(TicTacToeBoardTest, getOWinner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(1, 2);
+  T.placePiece(0, 1);
+  T.placePiece(1, 0);
+  T.placePiece(2, 2);
+  T.placePiece(1, 1);
+	ASSERT_EQ(T.getWiner(), 'O');
+}
+
+TEST(TicTacToeBoardTest, getXWinner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(1, 2);
+  T.placePiece(0, 1);
+  T.placePiece(1, 0);
+  T.placePiece(0, 2);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
