@@ -159,7 +159,7 @@ TEST(TicTacToeBoardTest, getOWinner)
   T.placePiece(1, 0);
   T.placePiece(2, 2);
   T.placePiece(1, 1);
-	ASSERT_EQ(T.getWiner(), 'O');
+	ASSERT_EQ(T.getWinner(), 'O');
 }
 
 TEST(TicTacToeBoardTest, getXWinner)
