@@ -154,11 +154,11 @@ TEST(TicTacToeBoardTest, getOWinner)
 {
   TicTacToeBoard T;
   T.placePiece(0, 0);
-  T.placePiece(1, 2);
-  T.placePiece(0, 1);
   T.placePiece(1, 0);
-  T.placePiece(2, 2);
+  T.placePiece(0, 1);
   T.placePiece(1, 1);
+  T.placePiece(2, 2);
+  T.placePiece(1, 2);
 	ASSERT_EQ(T.getWinner(), 'O');
 }
 
