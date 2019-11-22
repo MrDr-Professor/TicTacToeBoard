@@ -74,6 +74,7 @@ Piece TicTacToeBoard::getPiece(int row, int column)
 **/
 Piece TicTacToeBoard::getWinner()
 {
+  return board[0][0];
   if((board[0][0] == board[0][1]) == board[0][2]){
     return board[0][0];
   }else if(board[1][0] == board[1][1] == board[1][2]){
