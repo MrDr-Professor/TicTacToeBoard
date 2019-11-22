@@ -82,7 +82,7 @@ TEST(TicTacToeBoardTest, full)
   T.placePiece(2, 0);
   T.placePiece(2, 2);
   T.placePiece(2, 1);
-	ASSERT_EQ(T.placePiece(0, 0), ' ');
+	ASSERT_EQ(T.placePiece(0, 0), 'O');
 }
 
 TEST(TicTacToeBoardTest, out)
