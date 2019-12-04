@@ -172,3 +172,69 @@ TEST(TicTacToeBoardTest, getXWinner)
   T.placePiece(0, 2);
 	ASSERT_EQ(T.getWinner(), 'X');
 }
+
+TEST(TicTacToeBoardTest, getRow3Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(2, 0);
+  T.placePiece(1, 2);
+  T.placePiece(2, 1);
+  T.placePiece(1, 0);
+  T.placePiece(2, 2);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
+
+TEST(TicTacToeBoardTest, getCol1Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(1, 2);
+  T.placePiece(1, 0);
+  T.placePiece(1, 1);
+  T.placePiece(2, 0);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
+
+TEST(TicTacToeBoardTest, getCol2Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 1);
+  T.placePiece(1, 2);
+  T.placePiece(1, 1);
+  T.placePiece(1, 2);
+  T.placePiece(2, 1);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
+
+TEST(TicTacToeBoardTest, getCol3Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 2);
+  T.placePiece(1, 1);
+  T.placePiece(1, 2);
+  T.placePiece(1, 1);
+  T.placePiece(2, 2);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
+
+TEST(TicTacToeBoardTest, getDiag1Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 0);
+  T.placePiece(1, 0);
+  T.placePiece(1, 1);
+  T.placePiece(1, 2);
+  T.placePiece(2, 2);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
+
+TEST(TicTacToeBoardTest, getDiag2Winner)
+{
+  TicTacToeBoard T;
+  T.placePiece(0, 2);
+  T.placePiece(1, 0);
+  T.placePiece(1, 1);
+  T.placePiece(1, 2);
+  T.placePiece(2, 0);
+	ASSERT_EQ(T.getWinner(), 'X');
+}
