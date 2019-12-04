@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/MrDr-Professor/TicTacToeBoard.svg?branch=master)](https://travis-ci.org/MrDr-Professor/TicTacToeBoard) [![Coverage Status](https://coveralls.io/repos/github/MrDr-Professor/TicTacToeBoard/badge.svg)](https://coveralls.io/github/MrDr-Professor/TicTacToeBoard)
 # TicTacToeBoard
 
 ## Associated Enumerated Types
